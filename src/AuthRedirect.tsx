@@ -1,0 +1,63 @@
+import React, {useEffect, useState} from "react";
+import {binToBase64Url} from "./functions/AuthUtility";
+import {computeCodeVerifier, computeRandom, encodedHashBin} from "./functions/OAuth";
+import {production, dev} from "./config.json"
+
+export const redirect_uri = "http://localhost:3072/callback"
+
+const AuthRedirect = () => {
+
+    const [handled, setHandled] = useState(false)
+    const [redirectUrl, setRedirectUrl] = useState("")
+
+    const handleRedirect = async () => {
+
+
+
+        //OAuth Authorization Code Flow + PKCE step 1
+        const state = binToBase64Url(crypto.getRandomValues(new Uint8Array(16)))
+        const { verifier, challenge } = await computeCodeVerifier()
+        //OpenID nonce
+        const { encoded_bin: nonce_original, random_bin: nonce_bin } = computeRandom()
+        const nonce = await encodedHashBin(nonce_bin)
+
+        const params = new URLSearchParams({
+            "response_type": "code",
+            "client_id":  "reminders.tipten.nl",
+            "redirect_uri":  redirect_uri,
+            "state": state,
+            "code_challenge": challenge,
+            "code_challenge_method": "S256",
+            "nonce": nonce,
+        }).toString()
+
+        const state_verifier = {
+            code_verifier: verifier,
+            state
+        }
+        localStorage.setItem("state_verify", JSON.stringify(state_verifier))
+        localStorage.setItem("nonce_original", nonce_original)
+
+        setRedirectUrl("http://localhost:3073/oauth/authorize?" + params)
+
+        setHandled(true)
+    }
+
+    useEffect(() => {
+        if (!handled) {
+            handleRedirect().catch();
+        }
+    }, [handled]);
+
+    if (handled) {
+        // Use state to get path to redirect to
+        window.location.replace(redirectUrl)
+    }
+
+    return (
+        <>
+        </>
+    )
+}
+
+export default AuthRedirect;

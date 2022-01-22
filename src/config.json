@@ -1,0 +1,10 @@
+{
+  "auth_location": {
+    "production": "http://localhost:4243",
+    "dev": "http://localhost:"
+  },
+  "api_location": {
+    "production": "",
+    "dev": "http://localhost:4243"
+  }
+}
