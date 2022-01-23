@@ -12,7 +12,7 @@ ReactDOM.render(
           <Routes>
               <Route path="/" element={<App />} />
               <Route path="/lg" element={<AuthRedirect />} />
-              <Route path="/callback" element={<AuthCallback />} />
+              <Route path="/auth/callback" element={<AuthCallback />} />
           </Routes>
       </BrowserRouter>
   </React.StrictMode>,

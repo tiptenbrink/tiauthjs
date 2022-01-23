@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from "react";
 import {binToBase64Url} from "./functions/AuthUtility";
 import {computeCodeVerifier, computeRandom, encodedHashBin} from "./functions/OAuth";
-import {production, dev} from "./config.json"
+import config from "./config"
 
-export const redirect_uri = "http://localhost:3072/callback"
+export const redirect_uri = config.self_location + "/auth/callback"
 
 const AuthRedirect = () => {
 
@@ -23,7 +23,7 @@ const AuthRedirect = () => {
 
         const params = new URLSearchParams({
             "response_type": "code",
-            "client_id":  "reminders.tipten.nl",
+            "client_id":  config.client_id,
             "redirect_uri":  redirect_uri,
             "state": state,
             "code_challenge": challenge,
@@ -38,7 +38,7 @@ const AuthRedirect = () => {
         localStorage.setItem("state_verify", JSON.stringify(state_verifier))
         localStorage.setItem("nonce_original", nonce_original)
 
-        setRedirectUrl("http://localhost:3073/oauth/authorize?" + params)
+        setRedirectUrl(`${config.auth_location}/oauth/authorize?` + params)
 
         setHandled(true)
     }
@@ -46,13 +46,10 @@ const AuthRedirect = () => {
     useEffect(() => {
         if (!handled) {
             handleRedirect().catch();
+        } else {
+            window.location.replace(redirectUrl)
         }
     }, [handled]);
-
-    if (handled) {
-        // Use state to get path to redirect to
-        window.location.replace(redirectUrl)
-    }
 
     return (
         <>

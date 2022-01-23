@@ -1,5 +1,6 @@
 import { binToBase64Url, base64ToBin, stringToUint8 } from "./AuthUtility"
 import { z } from "zod";
+import config from "../config";
 
 export function computeRandom(length=16) {
     const random_bin = crypto.getRandomValues(new Uint8Array(length))
@@ -57,10 +58,10 @@ export async function validateIdToken(id_json: string) {
 
     let web_included = false
     id_payload.aud.forEach(aud => {
-        if (aud === "reminders.tipten.nl") {
+        if (aud === config.client_id) {
             web_included = true
         }
-        else if (aud !== "reminders.tipten.nl") {
+        else if (aud !== config.client_id) {
             throw new Error("Invalid audience!")
         }
     })

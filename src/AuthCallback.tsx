@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
 import { decodeJwtPayload, validateIdToken } from "./functions/OAuth";
 import {redirect_uri} from "./AuthRedirect";
+import config from "./config"
 
 
 const AuthCallback = () => {
@@ -29,13 +30,13 @@ const AuthCallback = () => {
         }
 
         const token_request = {
-            "client_id":  "reminders.tipten.nl",
+            "client_id":  config.client_id,
             "grant_type": "authorization_code",
             "redirect_uri":  redirect_uri,
             "code": code,
             "code_verifier": state_verifier.code_verifier,
         }
-        const res = await fetch(`http://localhost:3073/oauth/token/`, {
+        const res = await fetch(`${config.auth_location}/oauth/token/`, {
             method: 'POST', body: JSON.stringify(token_request),
             headers: {
                 'Content-Type': 'application/json'
@@ -77,13 +78,10 @@ const AuthCallback = () => {
     useEffect(() => {
         if (!gotToken) {
             handleCallback().catch();
+        } else {
+            navigate("/", { replace: true} )
         }
     }, [gotToken]);
-
-    if (gotToken) {
-        // Use state to get path to redirect to
-        navigate("/", { replace: true} )
-    }
 
     return (
         <>
