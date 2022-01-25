@@ -74,3 +74,36 @@ export async function validateIdToken(id_json: string) {
 
     return id_payload
 }
+
+export async function handleTokenResponse(token_res: any) {
+    const {
+        id_token, access_token, refresh_token, token_type, expires_in, scope
+    } = token_res
+
+    if (token_type !== "Bearer") {
+        console.log("Incorrect token_type!")
+    }
+
+    if (expires_in === "x") {
+
+    }
+    if (scope === "scope") {
+
+    }
+    try {
+        const id_payload = await validateIdToken(decodeJwtPayload(id_token))
+        localStorage.setItem("access_expiry", expires_in.toString())
+        localStorage.setItem("access", access_token)
+        localStorage.setItem("refresh", refresh_token)
+        localStorage.setItem("id_payload", JSON.stringify(id_payload))
+        console.log(access_token)
+        console.log(refresh_token)
+    }
+    catch (e) {
+        if (e instanceof Error) {
+            console.log(e.message)
+        } else {
+            console.log(e)
+        }
+    }
+}

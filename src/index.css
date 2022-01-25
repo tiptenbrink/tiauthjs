@@ -10,53 +10,6 @@ body, input, textarea, button {
   color: #A9B7C6;
 }
 
-.tiauth2 {
-  text-align: center;
-  font-size: 5em;
-  margin: 0.8em 0 0;
-}
-
-label{
-  color: #c7c2c2;
-  font-size: 1.3em;
-  justify-content: center;
-  display: flex;
-  margin: 0.4em;
-  font-weight: bold;
-}
-input {
-  width: 60%;
-  height: 1.8em;
-  justify-content: center;
-  display: flex;
-  margin: 0.4em auto 0.5em;
-  padding: 0.7em;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  background: #c7c2c2;
-  color: #212020;
-}
-
-button{
-  width: 60%;
-  height: 3em;
-  margin: 1em auto;
-  justify-content: center;
-  display: block;
-  color: #f8f5f5;
-  background: #3b3942;
-  font-size: 1em;
-  font-weight: bold;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-button:hover{
-  background: #56545e;
-}
-
 body {
   background-color: #1a1a1c;
   margin: 0;
@@ -113,8 +66,4 @@ footer p {
 
 footer .icon-container {
   font-size: 1.2em;
-}
-
-.auth-form {
-  margin-top: 18vh;
 }
