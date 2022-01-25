@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9177a442-a756-4025-b458-d40b8c11f468" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authpage/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authpage/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authpage/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authpage/src/App.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authpage/src/Auth.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authpage/src/Authenticate.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authpage/src/Footer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authpage/src/config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authpage/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authpage/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authpage/src/main.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authpage/src/vite-env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authpage/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authpage/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/authclient.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/authclient/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/authclient/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/authclient/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuthCallback.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/authclient/src/AuthCallback.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuthContext.ts" beforeDir="false" afterPath="$PROJECT_DIR$/authclient/src/AuthContext.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuthRedirect.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/authclient/src/AuthRedirect.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/authclient/src/Profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Protected.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/authclient/src/Protected.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/authclient/src/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/authclient/src/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/functions/AuthState.ts" beforeDir="false" afterPath="$PROJECT_DIR$/authclient/src/functions/AuthState.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/functions/AuthUtility.ts" beforeDir="false" afterPath="$PROJECT_DIR$/authclient/src/functions/AuthUtility.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/functions/OAuth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/authclient/src/functions/OAuth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/authclient/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/authclient/src/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/authclient/src/profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vite-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/authclient/src/vite-env.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/authclient/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/authclient/vite.config.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="24CmQkM9oF7EEw8uM64oXPTP6sH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9177a442-a756-4025-b458-d40b8c11f468" name="Changes" comment="" />
+      <created>1643142928894</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1643142928894</updated>
+      <workItem from="1643142930002" duration="166000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
